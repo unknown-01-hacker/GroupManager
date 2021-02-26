@@ -31,6 +31,8 @@ Activate Anti-spam protection in your BM by this command :
 
 My owner is @Raja_Kannada_Admin
 
+*My Group* - @Pruthvi_RJ_Group
+
 Special thanks to *Unknown person* for helping me.
 
 Click /help or Help button below to find out more about how to use me to my full potential.
@@ -153,11 +155,11 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START
 
-    keyboard = [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_")]]
-    keyboard += [[InlineKeyboardButton(text="➕ Add Me ", callback_data="cntrl_panel_M"), 
+    keyboard = [[InlineKeyboardButton(text="MY GROUP 🤍",url="https://t.me/Pruthvi_RJ_Group")]]
+    keyboard += [[InlineKeyboardButton(text="➕ Add Me",url="http://t.me/Pruthvi_RJ_bot?startgroup=true"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
     
-    update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=false, parse_mode=ParseMode.MARKDOWN)
 
 
 def control_panel(bot, update):
